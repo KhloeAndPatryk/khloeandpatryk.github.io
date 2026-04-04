@@ -974,7 +974,7 @@ const COLORS = ['#E177AB','#F9D6E5','#EE771E','#FFE228','#5085C5','#A59AC9'];
 const petals = Array.from({length: 38}, () => ({
   x: Math.random() * window.innerWidth,
   y: Math.random() * window.innerHeight,
-  r: Math.random() * 12 + 6,        // slightly larger
+  r: Math.random() * 9 + 5,
   color: COLORS[Math.floor(Math.random() * COLORS.length)],
   speed: Math.random() * 0.8 + 0.3,
   drift: (Math.random() - 0.5) * 0.5,
@@ -991,7 +991,7 @@ let fadePhase = 'in';
 let holdTimer = 0;
 const FADE_IN_SPEED = 0.025;
 const FADE_OUT_SPEED = 0.008;
-const HOLD_FRAMES = 360;
+const HOLD_FRAMES = 300;
 
 // Shift a hex color's lightness slightly for inner tint
 function lightenColor(hex, amount) {
