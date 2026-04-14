@@ -25,6 +25,7 @@
     --primary: #BA83B7;
     --secondary: #B09DCA;
     --tertiary: #A4D5BA;
+    --dark-button: #222222;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -523,8 +524,11 @@
     font-weight: 500;
     transition: all 0.3s;
     border: 1.5px solid;
+    background: var(--dark-button);
+    border-color: var(--yellow);
+    color: var(--yellow)
   }
-  .registry-btn:nth-child(1) { background: var(--yellow); border-color: var(--yellow); color: var(--text-dark); }
+  .registry-btn:nth-child(2) { background: var(--yellow); border-color: var(--yellow); color: var(--text-dark); }
   .registry-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
 
   /* ── TRAVEL ── */
@@ -534,7 +538,7 @@
   }
   .travel-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(max(240px, 50%), 1fr));
     gap: 24px;
     text-align: left;
     margin-top: 0;
@@ -873,12 +877,14 @@
     <span class="section-label reveal">Gifts</span>
     <h2 class="section-title reveal">Registry</h2>
     <p class="registry-msg reveal">Right after the wedding we will be going on our honeymoon to Japan - the place that brought us together through the mutual interest of its language and culture, and the place we have talked about countless of times as our dream destination.</p>
-    <p class="registry-msg reveal">After, we will be moving to Poland and start our life together there. It will be hard for us to bring all the material gifts with us there.</p>
+    <p class="registry-msg reveal">After, we will be moving to Poland and start our life together there. It will be hard for us to bring all the material gifts with us if we get them at the wedding.</p>
     <p class="registry-msg reveal">Hence, we would greatly appreciate any monetary contribution to help us have a dream honeymoon and a wonderful beginning to a life together.</p>
     <div class="registry-links reveal">
-      <a href="#registry" class="registry-btn">Honeymoon & Future Life Fund</a>
+      <a href="https://cash.app/$khloedillard" target="_blank" class="registry-btn">Khloe's Personal Cash App</a>
+      <a href="https://www.honeyfund.com/site/czerniewicz-dillard-08-15-2026" target="_blank" class="registry-btn">Honeymoon & Future Life Fund</a>
+      <a href="https://revolut.me/czerniewiczp" target="_blank" class="registry-btn">Patryk's Personal Revolut</a>
     </div>
-    <p class="reveal" style="margin-top:24px;font-size:0.75rem;color:var(--text-light);letter-spacing:0.05em;">Links coming soon. Check back closer to the date!</p>
+    <p class="reveal" style="margin-top:24px;font-size:0.75rem;color:var(--text-light);letter-spacing:0.05em;">You can contribute to our honeymoon fund or directly to us using our personal links. Thank you so much for every bit of help!</p>
   </div>
 </section>
 
@@ -923,7 +929,7 @@
     <div class="faq-list reveal">
       <div class="faq-item">
         <div class="faq-q">Can I bring a plus one? <span class="faq-icon">+</span></div>
-        <div class="faq-a"><p>Plus ones are welcome if indicated on your invitation. Please note it on your RSVP form. If you're unsure, don't hesitate to reach out to us directly!</p></div>
+        <div class="faq-a"><p>Plus ones are welcome if indicated on your invitation. Please note it on your RSVP form. Since we have a limited number of guests allowed, please reach out to us if you want to bring someone who was not directly invited by us.</p></div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Are children invited? <span class="faq-icon">+</span></div>
