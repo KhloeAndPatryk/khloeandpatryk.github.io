@@ -524,11 +524,10 @@
     font-weight: 500;
     transition: all 0.3s;
     border: 1.5px solid;
-    background: var(--dark-button);
+    background: var(--yellow);
     border-color: var(--yellow);
-    color: var(--yellow)
+    color: var(--text-dark)
   }
-  .registry-btn:nth-child(2) { background: var(--yellow); border-color: var(--yellow); color: var(--text-dark); }
   .registry-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
 
   /* ── TRAVEL ── */
@@ -877,14 +876,13 @@
     <span class="section-label reveal">Gifts</span>
     <h2 class="section-title reveal">Registry</h2>
     <p class="registry-msg reveal">Right after the wedding we will be going on our honeymoon to Japan - the place that brought us together through the mutual interest of its language and culture, and the place we have talked about countless of times as our dream destination.</p>
-    <p class="registry-msg reveal">After, we will be moving to Poland and start our life together there. It will be hard for us to bring all the material gifts with us if we get them at the wedding.</p>
-    <p class="registry-msg reveal">Hence, we would greatly appreciate any monetary contribution to help us have a dream honeymoon and a wonderful beginning to a life together.</p>
+    <p class="registry-msg reveal">After, we will be moving to Poland and start our life together there. <b>It will be hard for us to bring all the material gifts with us if we get them at the wedding.</b></p>
+    <p class="registry-msg reveal">We would greatly appreciate any monetary contribution at the wedding, to our honeymoon fund, or to our wedding registry below.</p>
     <div class="registry-links reveal">
-      <a href="https://cash.app/$khloedillard" target="_blank" class="registry-btn">Khloe's Personal Cash App</a>
       <a href="https://www.honeyfund.com/site/czerniewicz-dillard-08-15-2026" target="_blank" class="registry-btn">Honeymoon & Future Life Fund</a>
-      <a href="https://revolut.me/czerniewiczp" target="_blank" class="registry-btn">Patryk's Personal Revolut</a>
+      <a href="https://www.amazon.com/wedding/share/khloeandpatryk" target="_blank" class="registry-btn">Amazon Gift Registry</a>
     </div>
-    <p class="reveal" style="margin-top:24px;font-size:0.75rem;color:var(--text-light);letter-spacing:0.05em;">You can contribute to our honeymoon fund or directly to us using our personal links. Thank you so much for every bit of help!</p>
+    <p class="reveal" style="margin-top:24px;font-size:0.75rem;color:var(--text-light);letter-spacing:0.05em;">You can contribute to our honeymoon fund or the gift registry. Thank you so much for every bit of help!</p>
   </div>
 </section>
 
@@ -996,7 +994,7 @@ let fadePhase = 'in';
 let holdTimer = 0;
 const FADE_IN_SPEED = 0.025;
 const FADE_OUT_SPEED = 0.008;
-const HOLD_FRAMES = 300;
+const HOLD_FRAMES = 60;
 
 // Shift a hex color's lightness slightly for inner tint
 function lightenColor(hex, amount) {
